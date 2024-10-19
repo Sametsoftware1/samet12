@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirtaki Slayt Sunumu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .slide {
+            display: none; /* Tüm slaytları başlangıçta gizle */
+        }
+
+        .slide-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .slide-image:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .question {
+            text-align: left;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sirtaki Dansı</h1>
+
+        <div class="slide" id="slide1">
+            <h2>Sirtaki Nedir?</h2>
+            <p>Sirtaki, Yunan kökenli bir dans türüdür ve geleneksel Yunan müziği ile oynanır. Genellikle grup halinde dans edilir ve insanların bir araya gelip eğlendiği sosyal bir aktivitedir. Sirtaki, çeşitli adımlar ve hareketlerden oluşur ve müzik ritmine göre hızlanarak hareketli bir şekilde devam eder.</p>
+            <img src="https://www.artgoa.com/wp-content/uploads/2016/08/0_611fe_81ec3bc3_-1-XXL.jpg" alt="Sirtaki Dansı" class="slide-image">
+        </div>
+
+        <div class="slide" id="slide2">
+            <h2>Sirtaki'nin Tarihi</h2>
+            <p>Sirtaki, 1964 yapımı "Zorba the Greek" filminde popülerleşmiştir. Bu film, Yunan kültürünün ve geleneklerinin dünya genelinde tanınmasına yardımcı olmuştur. Sirtaki, Yunan folklor danslarına dayanmaktadır ve zamanla daha hızlı ve enerjik bir forma evrilmiştir.</p>
+            <img src="https://www.yildizdansakademi.com/wp-content/uploads/2019/02/sirtaki-6.jpg" alt="Zorba the Greek" class="slide-image">
+        </div>
+
+        <div class="slide" id="slide3">
+            <h2>Sirtaki'nin Kültürel Önemi</h2>
+            <p>Sirtaki, Yunan kültürünün en tanınan sembollerinden biridir. Bu dans, Yunanistan'da kutlamalar, düğünler ve sosyal etkinliklerde sıkça yer alır. Sirtaki, kültürel bağları güçlendiren bir sosyal aktivitedir.</p>
+            <img src="https://www.tanjuyildirim.com/wp-content/uploads/sirtaki-1.jpg" alt="Sirtaki Kültürel Önemi" class="slide-image">
+        </div>
+
+        <div class="slide" id="slide4">
+            <h2>Sirtaki Adımları</h2>
+            <p>Sirtaki dansı genellikle şu adımlarla gerçekleştirilir:</p>
+            <ul>
+                <li><strong>Başlangıç:</strong> Dans yavaş bir tempoda başlar. Dansçılar ellerini kenetleyerek yan yana durur.</li>
+                <li><strong>Adımlar:</strong> Adımlar, sağa ve sola kaydırılarak ve belirli ritimlerle senkronize edilir.</li>
+                <li><strong>Hızlanma:</strong> Müzik hızlandıkça dans da hızlanır.</li>
+                <li><strong>Dönüş:</strong> Dansçılar döngüsel hareketler yapar ve bazen zıplarlar.</li>
+            </ul>
+            <img src="https://danskeyfialtunizade.com/wp-content/uploads/2022/11/Cyprus-folk-1024x822.jpg" alt="Sirtaki Adımları" class="slide-image">
+        </div>
+
+        <div class="slide" id="slide5">
+            <h2>Sirtaki'de Kullanılan Enstrümanlar</h2>
+            <p>Sirtaki müziğinde kullanılan enstrümanlar arasında bouzouki, gitar ve darbuka gibi geleneksel müzik aletleri bulunur. Bu enstrümanlar, dansın enerjisini artırmak için kullanılır.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Bouzouki_tetrachordo.jpg" alt="Bouzouki" class="slide-image">
+        </div>
+
+        <div class="slide" id="slide6">
+            <h2>Sirtaki Dansı Video</h2>
+            <p>Aşağıda Dailymotion'da sirtaki dansının gösterildiği bir video bulunmaktadır:</p>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                <iframe src="https://geo.dailymotion.com/player.html?video=x2u32i7"
+                  style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
+                  allowfullscreen
+                  title="Dailymotion Video Player"
+                  allow="web-share">
+                </iframe>
+              </div>
+        </div>
+
+        <div class="slide" id="slide7">
+            <h2>Sık Sorulan Sorular</h2>
+            <div class="question">
+                <h3>1. Sirtaki dansının kökenleri nelerdir?</h3>
+                <p>Sirtaki, geleneksel Yunan danslarından beslenmesine rağmen, modern bir yaratım olarak kabul edilir. 1964 yılında "Zorba the Greek" filminde yer almasıyla popülaritesi arttı.</p>
+            </div>
+            <div class="question">
+                <h3>2. Sirtaki müziği ve ritmi nasıldır?</h3>
+                <p>Sirtaki müziği, geleneksel Yunan müziğinin bir parçasıdır ve yavaş bir tempoda başlar, daha sonra hızlanır.</p>
+            </div>
+            <div class="question">
+                <h3>3. Sirtaki'nin sembolik anlamı nedir?</h3>
+                <p>Sirtaki, Yunan kültüründe birlik ve dayanışmanın sembolüdür.</p>
+            </div>
+            <div class="question">
+                <h3>4. Sirtaki nasıl öğrenilir?</h3>
+                <p>Sirtaki dansını öğrenmek için yerel dans okulları veya çevrimiçi kaynaklar kullanılabilir.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn" onclick="changeSlide(-1)">Önceki</button>
+        <button id="nextBtn" onclick="changeSlide(1)">Sonraki</button>
+    </div>
+
+
+    <script>
+   
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1; // Dolaşma
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0; // Dolaşma
+            }
+            showSlide(currentSlide);
+        }
+
+        // İlk slaytı göster
+        showSlide(currentSlide);
+    </script>
+</body>
+</html> 
+
